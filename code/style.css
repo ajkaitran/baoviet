@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+header{
+    display: none;
+}
+.menu-web{
+    display: none;
+}
+nav{
+    background-color: #2A79C0;
+    color: white;
+    /* height: 40px; */
+    position: relative;
+    text-align: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 0 5px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.name{
+    font-size: 25px;
+    font-weight: bold;
+}
+.desc{
+    color: black;
+}
+.icon-home{
+    border-right: 1px solid #276a97;
+    
+}
+.box-wrapper{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    text-align: start;
+}
+.search-nav{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+
+.search-nav input{
+    width: 86%;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.search-nav input::placeholder{
+    color: gray;
+}
+.search-nav button{
+    background-color: #DDA307;
+    border: #DDA307;
+    color: white;
+    width: 4%;
+    padding: 10px;
+    margin-left: -5px;
+}
+nav ul li:hover .box-wrapper{
+    display: block;
+}
+nav ul li:hover .search-nav{
+    display: block;
+}
+
+.slide_ld{
+    position: relative;
+}
+.slick-prev{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(187, 244, 255);
+    color: white;
+    position: absolute;
+    left:-2%;
+    top: 40%;
+}
+.slick-next{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(187, 244, 255);
+    color: white;
+    position: absolute;
+    right: -2%;
+    top: 40%;
+}
+.slick-prev:hover, .slick-next:hover{
+    background-color: rgb(114, 231, 255);
+}
+/* slide tròn */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+}
+
+.slick-dots li {
+    margin: 0 0.25rem;
+}
+
+.slick-dots button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid white;
+}
+.box-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.box-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-text {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.box-imgprd {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-textprd {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.box-imgprd1 {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-textprd1 {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.box-imgld {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-textld {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.title-section{
+    font-size: 2.25rem;
+    font-weight:  900;
+    color: #068cd2;
+    
+}
+.ct1 img{
+    width: 100%;
+}
+.ct3 .col-8{
+    border-right: 2px solid gray;
+}
+.ct5 form{
+    background-color: #3399D3; 
+    border-radius: 10px; 
+    padding: 60px;
+}
+.ct6 .img-car{
+    width: 100%;
+}
+.ct7 .row .col-3{
+    padding: 10px;
+}
+.box-img1 {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.5;
+}
+
+.text1 {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+
+.box-img2 {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.5;
+}
+
+.text2 {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+
+.box-img3 {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.5;
+}
+
+.text3 {
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+}
+
+.box-img4 {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.5;
+}
+
+.text4 {
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
+
+.search-footer{
+    width: 100%;
+    background-color: #3388D6;
+    
+}
+
+.search-footer input{
+    background: none;
+    width: 90%;
+    border: none;
+    margin: 6px 12px;
+}
+.search-footer input::placeholder{
+    color: white;
+}
+.search-footer button{
+    background: none;
+    color: white;
+    width: 5%;
+    border: none;
+    padding: 6px 12px;
+    margin: 0 0 0 -8px;
+}
+.boxo {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #DDA307;
+}
+/* backtop */
+/* .backtop{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #DDA307;
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+} */
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .box-text h1{
+        font-size: 24px;
+    }
+    .box-text h5{
+        font-size: 15px;
+    }
+        /* slide tròn */
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+        list-style-type: none;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+
+    .slick-dots li {
+        margin: 0 0.25rem;
+    }
+
+    .slick-dots button {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        text-indent: -9999px;
+    }
+
+    .slick-dots li.slick-active button {
+        background-color: transparent;
+        opacity: 1;
+        border: 1px solid white;
+    }
+    .ct1 h4{
+        font-size: 14px;
+    }
+    .ct1 p{
+        font-size: 12px;
+    }
+    .ct2 h3{
+        font-size: 18px;
+    }
+    .ct2 img{
+        width: 90%;
+        margin: 0;
+    }
+    .ct2 h3{
+        font-size: 18px;
+        padding: 0 10%;
+    }
+    .ct2 .col-12 button{
+        width: 40%;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .title-section{
+        font-size: 1.25rem;
+        font-weight:  900;
+        color: #068cd2;
+        
+    }
+    
+    .slide_ld{
+        position: relative;
+    }
+    .slick-prev{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(187, 244, 255);
+        color: white;
+        position: absolute;
+        left:-1%;
+        top: 40%;
+    }
+    .slick-next{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(187, 244, 255);
+        color: white;
+        position: absolute;
+        right: -1%;
+        top: 40%;
+    }
+    .slick-prev:hover, .slick-next:hover{
+        background-color: rgb(114, 231, 255);
+    }
+    .ct3 p{
+        font-size: 8px;
+    }
+    .ct3 h4{
+        font-size: 14px;
+    }
+    .ct3 h5{
+        font-size: 10px;
+    }
+    .ct3 img{
+        width: 70px;
+    }
+    .ct4 .col-12 img{
+        width: 20%;
+    }
+    .ct4 h1{
+        font-size: 18px;
+    }
+    .ct4 p{
+        font-size: 12px;
+    }
+    .ct4 button{
+        width: 40%;
+        font-size: 10px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .ct5 .form{
+        padding:20px 10px;
+        background-color: #3399D3; 
+    }
+    .ct5 .form h2{
+        font-size: 18px;
+    }
+    .ct5 .form p{
+        font-size: 10px;
+    }
+    .ct5 pre{
+        font-size: 8px;
+    }
+    .ct7 .col-3{
+        padding: 5px;
+    }
+    .ct7 img{
+        width: 30%;
+    }
+    .ct7 h3{
+        font-size: 15px;
+    }
+    .ct7 p{
+        font-size: 10px;
+    }
+    footer h3{
+        font-size: 18px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+    footer i{
+        font-size: 10px;
+    }
+    .boxo {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 50px;
+        display: inline-block;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .search-footer input{
+        background: none;
+        width: 85%;
+        border: none;
+        margin: 6px 12px;
+    }
+    .search-footer input::placeholder{
+        color: white;
+    }
+    .search-footer button{
+        background: none;
+        color: white;
+        width: 5%;
+        border: none;
+        padding: 6px 12px;
+        margin: 0 0 0 -8px;
+    }
+}
+/* Mobile */
+@media (max-width: 740px) {
+    .box-text h1{
+        font-size: 12px;
+    }
+    .box-text h5{
+        font-size: 7px;
+    }
+    .box-text button{
+        width: 65%;
+        font-size: 7px;
+        padding: 3px;
+        position: absolute;
+        top: 75%;
+    }
+        /* slide tròn */
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+        list-style-type: none;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+
+    .slick-dots li {
+        margin: 0 0.25rem;
+    }
+
+    .slick-dots button {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        text-indent: -9999px;
+    }
+
+    .slick-dots li.slick-active button {
+        background-color: transparent;
+        opacity: 1;
+        border: 1px solid white;
+    }
+    .ct1 h4{
+        font-size: 14px;
+    }
+    .ct1 p{
+        font-size:12px;
+    }
+    .ct1 h3{
+        font-size: 16px;
+    }
+    .ct1 button{
+        width: 40%;
+        font-size: 10px;
+        padding: 5px;
+        position: absolute;
+        top: 90%;
+    }
+    .ct1 img{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .title-section{
+        font-size: 1.25rem;
+        font-weight:  900;
+        color: #068cd2;
+        
+    }
+    .ct2 img{
+        width: 90%;
+        margin: 0;
+    }
+    .ct2 h3{
+        font-size: 18px;
+        padding: 0 10%;
+    }
+    .ct2 .col-12 button{
+        width: 40%;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .slide_ld{
+        position: relative;
+    }
+    .slick-prev{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(187, 244, 255);
+        color: white;
+        position: absolute;
+        left:-1%;
+        top: 40%;
+    }
+    .slick-next{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(187, 244, 255);
+        color: white;
+        position: absolute;
+        right: 7%;
+        top: 40%;
+    }
+    .slick-prev:hover, .slick-next:hover{
+        background-color: rgb(114, 231, 255);
+    }
+    .ct3{
+        text-align: center;
+    }
+    .ct3 p{
+        font-size: 13px;
+        margin: 1px;
+    }
+    .ct3 h4{
+        font-size: 14px;
+    }
+    .ct3 h5{
+        font-size: 10px;
+    }
+    .ct3 img{
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+    }
+    .ct4 .col-12 img{
+        width: 30%;
+    }
+    .ct4 h1{
+        font-size: 18px;
+    }
+    .ct4 p{
+        font-size: 12px;
+    }
+    .ct4 button{
+        width: 40%;
+        font-size: 10px;
+        padding: 5px;
+    }
+    .box-img1 {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .text1 {
+        position: absolute;
+        top: 30%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .box-img2 {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .text2 {
+        position: absolute;
+        top: 78%;
+        left: 26.5%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .box-img3 {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .text3 {
+        position: absolute;
+        top: 30%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .box-img4 {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .text4 {
+        position: absolute;
+        top: 80%;
+        left: 73%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .ct5 .form{
+        padding:20px 10px;
+        background-color: #3399D3; 
+    }
+    .ct5 .form h2{
+        font-size: 18px;
+    }
+    .ct5 .form p{
+        font-size: 10px;
+    }
+    .ct5 pre{
+        font-size: 8px;
+    }
+    .ct6{
+        margin: 25px;
+    }
+    .ct6 .img-car{
+        width: 100%;
+    }
+    .ct6 h4{
+        font-size: 12px;
+    }
+    .ct6 p {
+        font-size: 8px;
+    }
+    .slide_4{
+        position: relative;
+    }
+    .slide_4 .slick-prev{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(187, 244, 255);
+        color: white;
+        position: absolute;
+        left:0%;
+        top: 40%;
+    }
+    .slide_4 .slick-next{
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: rgb(187, 244, 255);
+        color: white;
+        position: absolute;
+        right: 0%;
+        top: 40%;
+    }
+    .slide_4 .slick-prev:hover, .slick-next:hover{
+        background-color: rgb(114, 231, 255);
+    }
+    .ct7 .col-3{
+        padding: 5px;
+    }
+    .ct7 img{
+        width: 30%;
+    }
+    .ct7 h3{
+        font-size: 15px;
+    }
+    .ct7 p{
+        font-size: 10px;
+    }
+    footer h3{
+        font-size: 18px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+    footer i{
+        font-size: 10px;
+    }
+    .boxo {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 50px;
+        display: inline-block;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+}
