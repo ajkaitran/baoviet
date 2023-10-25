@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 header{
     display: none;
@@ -49,7 +48,7 @@ a{
 }
 .search-nav{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     left: 0;
     top: 100%;
@@ -314,10 +313,55 @@ nav ul li:hover .search-nav{
 
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-    .box-text h1{
+    .nav__mobile{
+        background-color: white;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; */
+        padding: 0 10px;
+        display: none;
+    }
+    .nav__mobile-header{
+        padding: 0 7%;
+        background-color: #2A79C0;
+    }
+    .nav__mobile-list{
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav__mobile-item{
+        padding: 10px;
+        margin: 0 20px;
+        border-top: 1px solid rgb(184, 184, 184);
+    }
+    .nav__mobile-link{
+        color: #068cd2;
+    }
+    .nav__mobile-item ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav__mobile-item ul li a{
+        color: black;
+        font-weight: 300;
+    }
+    .nav__search:checked ~ .search-nav{
+        display: block;
+    }
+    .nav__mobile-input:checked ~ .nav__mobile{
+        display: block;
+    }
+    .box-text h1, .box-textprd h1, .box-textprd1 h1, .box-textld h1{
         font-size: 24px;
     }
-    .box-text h5{
+    .box-text h5, .box-textprd h5, .box-textprd1 h5, .box-textld h5{
         font-size: 15px;
     }
         /* slide tròn */
@@ -351,6 +395,9 @@ nav ul li:hover .search-nav{
         background-color: transparent;
         opacity: 1;
         border: 1px solid white;
+    }
+    .slide_ld{
+        padding: 0 5%;
     }
     .ct1 h4{
         font-size: 14px;
@@ -502,10 +549,55 @@ nav ul li:hover .search-nav{
 }
 /* Mobile */
 @media (max-width: 740px) {
-    .box-text h1{
+    .nav__mobile{
+        background-color: white;
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; */
+        padding: 0 10px;
+        display: none;
+    }
+    .nav__mobile-header{
+        padding: 0 7%;
+        background-color: #2A79C0;
+    }
+    .nav__mobile-list{
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav__mobile-item{
+        padding: 10px;
+        margin: 0 20px;
+        border-top: 1px solid rgb(184, 184, 184);
+    }
+    .nav__mobile-link{
+        color: #068cd2;
+    }
+    .nav__mobile-item ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav__mobile-item ul li a{
+        color: black;
+        font-weight: 300;
+    }
+    .nav__search:checked ~ .search-nav{
+        display: block;
+    }
+    .nav__mobile-input:checked ~ .nav__mobile{
+        display: block;
+    }
+    .box-text h1, .box-textprd h1, .box-textprd1 h1, .box-textld h1{
         font-size: 12px;
     }
-    .box-text h5{
+    .box-text h5, .box-textprd h5, .box-textprd1 h5, .box-textld h5{
         font-size: 7px;
     }
     .box-text button{
@@ -546,6 +638,9 @@ nav ul li:hover .search-nav{
         background-color: transparent;
         opacity: 1;
         border: 1px solid white;
+    }
+    .slide_ld img{
+        padding: 0 20%;
     }
     .ct1 h4{
         font-size: 14px;
@@ -774,11 +869,12 @@ nav ul li:hover .search-nav{
         font-size: 10px;
     }
     footer i{
-        font-size: 10px;
+        font-size: 8px;
     }
     .boxo {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
+        padding-bottom: 5px;
         text-align: center;
         line-height: 50px;
         display: inline-block;
